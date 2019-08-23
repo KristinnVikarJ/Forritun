@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gestur2\\Desktop\\RPG\\RPG.csproj",
-      "projectName": "RPG",
-      "projectPath": "C:\\Users\\gestur2\\Desktop\\RPG\\RPG.csproj",
+      "projectUniqueName": "C:\\Users\\gestur2\\Desktop\\Forritun\\Forritun.csproj",
+      "projectName": "Forritun",
+      "projectPath": "C:\\Users\\gestur2\\Desktop\\Forritun\\Forritun.csproj",
       "packagesPath": "C:\\Users\\gestur2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gestur2\\Desktop\\RPG\\obj\\",
+      "outputPath": "C:\\Users\\gestur2\\Desktop\\Forritun\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\gestur2\\AppData\\Local\\Microsoft\\dotnet\\sdk\\NuGetFallbackFolder"
