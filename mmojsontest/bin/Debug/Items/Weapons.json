@@ -1,0 +1,24 @@
+{
+	"Sword": {
+		"$type": "mmojsontest.Weapon, mmojsontest",
+		"Damage": -5,
+		"Name": "Dummy Sword",
+		"Enchantments": [
+			{
+				"$type": "mmojsontest.Sharpness, mmojsontest",
+				"Level": 5
+			}
+		]
+	},
+	"Iron Sword": {
+		"$type": "mmojsontest.Weapon, mmojsontest",
+		"Damage": 10,
+		"Name": "Iron Sword",
+		"Enchantments": [
+			{
+				"$type": "mmojsontest.Flaming, mmojsontest",
+				"Level": 5
+			}
+		]
+	}
+}

@@ -6,52 +6,34 @@ using System.Threading.Tasks;
 
 namespace mmojsontest
 {
-    class Enchantment
+    abstract class Enchantment
     {
         public int Level;
-        public Enchantment(int Level)
-        {
-            this.Level = Level;
-        }
+
+        public abstract void Modify(Damage d); //let the derived class change the method
     }
 
-    interface IEnchantment
+    class Sharpness : Enchantment
     {
-        void Modify(Damage damage);
-    }
-
-    class WeaponEnchantment : Enchantment, IEnchantment
-    {
-
-        public WeaponEnchantment(int Level) : base(Level)
-        {
-
-        }
-
-        void IEnchantment.Modify(Damage damage) {}
-    }
-
-    class Sharpness : WeaponEnchantment
-    {
-        public void Modify(Damage damage)
+        public override void Modify(Damage damage)
         {
             damage.damage *= (float)Math.Pow(1.2, Level);
         }
 
-        public Sharpness(int Level) : base(Level)
+        public Sharpness(int Level)
         {
             this.Level = Level;
         }
     }
 
-    class Flaming : WeaponEnchantment
+    class Flaming : Enchantment
     {
-        public void Modify(Damage damage)
+        public override void Modify(Damage damage)
         {
             damage.AddModifier(new Flame(Level));
         }
 
-        public Flaming(int Level) : base(Level)
+        public Flaming(int Level)
         {
             this.Level = Level;
         }

@@ -8,3 +8,14 @@ C:\Users\Burknavellir\Documents\Visual Studio 2017\Projects\mmojsontest\mmojsont
 C:\Users\Burknavellir\Documents\Visual Studio 2017\Projects\mmojsontest\mmojsontest\obj\Debug\mmojsontest.csproj.CopyComplete
 C:\Users\Burknavellir\Documents\Visual Studio 2017\Projects\mmojsontest\mmojsontest\obj\Debug\mmojsontest.exe
 C:\Users\Burknavellir\Documents\Visual Studio 2017\Projects\mmojsontest\mmojsontest\obj\Debug\mmojsontest.pdb
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\bin\Debug\mmojsontest.exe.config
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\bin\Debug\mmojsontest.exe
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\bin\Debug\mmojsontest.pdb
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\obj\Debug\mmojsontest.csprojAssemblyReference.cache
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\obj\Debug\mmojsontest.csproj.CoreCompileInputs.cache
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\obj\Debug\mmojsontest.csproj.CopyComplete
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\obj\Debug\mmojsontest.exe
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\obj\Debug\mmojsontest.pdb
+C:\Users\Burknavellir\Desktop\Forritun\mmojsontest\bin\Debug\Items\Weapons.json

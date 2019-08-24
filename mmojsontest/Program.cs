@@ -4,35 +4,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace mmojsontest
 {
     class Program
     {
         public static Player P;
+        public static JsonSerializerSettings JsonSettings;
         static void Main(string[] args)
         {
             P = new Player();
 
-            Weapon Sword = new Weapon("Sword", 10);
-            Sword.Enchantments.Add(new Sharpness(5));
-            var a = new JsonSerializerSettings();
-            a.TypeNameHandling = TypeNameHandling.Objects;
+            string weapons = string.Join("\n", FileManager.LoadFile(Environment.CurrentDirectory + "/Items/Weapons.json"));
 
-            P.AddItem(Sword);
-            string Convert = JsonConvert.SerializeObject(P, a);
-            Console.WriteLine(Convert);
+            JsonSettings = new JsonSerializerSettings();
+            JsonSettings.TypeNameHandling = TypeNameHandling.Objects;
 
-            Player P2 = JsonConvert.DeserializeObject<Player>(Convert, a);
-            Weapon w = (Weapon)P2.Inventory[0];
-            Console.WriteLine(w.Enchantments[0]);
+            Dictionary<string, Weapon> Weapons = JsonConvert.DeserializeObject<Dictionary<string,Weapon>>(weapons, JsonSettings);
+            foreach(KeyValuePair<string, Weapon> key in Weapons)
+            {
+                Console.WriteLine(key.Value.Name + " - " + key.Value.Damage);
+            }
 
-            //LOAD PLAYER DATA
+            /*
+             * Create Selection Screen like
+             * 
+             * Slot 1
+             * Slot 2
+             * 
+             * Movable with Arrow keys, run in game logic loop
+             */
 
-            //GAME LOGIC
             while (true)
             {
-
+                ConsoleKeyInfo KeyPressed = Console.ReadKey();
             }
         }
     }
